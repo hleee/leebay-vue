@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import AppNav from '@/components/AppNav.vue';
+import AppNav from '@/components/AppNav.vue'
 
 export default {
   components: { AppNav }
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/styles/global.scss"
+@import "./assets/styles/global.scss";
 .page {
   display: flex;
   justify-content: center;
