@@ -12,7 +12,7 @@
 
 <script>
 import axios from 'axios'
-import EventCard from '@/components/EventCard.vue'
+import EventCard from '../components/EventCard'
 
 export default {
   components: { EventCard },
@@ -23,10 +23,15 @@ export default {
     }
   },
   created() {
-    axios.get('//localhost:3000/dashboard').then(({ data }) => {
-      this.events = data.events.events
-      this.isLoading = false
-    })
+    axios
+      .get('//localhost:3000/dashboard')
+      .then(({ data }) => {
+        this.events = data.events.events
+        this.isLoading = false
+      })
+      .catch(error => {
+        console.log(error.response)
+      })
   }
 }
 </script>
