@@ -1,5 +1,9 @@
 {
-  "name": "John Smith",
-  "email": "john@gmail.com",
-  "password": "pass123"
+  "user": [
+    {
+      "name": "John Smith",
+      "email": "john@gmail.com",
+      "password": "pass123"
+    }
+  ]
 }

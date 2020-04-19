@@ -5,7 +5,7 @@
       <EventCard v-for="event in events" :key="event.id" :event="event" />
     </template>
     <p v-else>
-      Loading events
+      Loading events...
     </p>
   </div>
 </template>
